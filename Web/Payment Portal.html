@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Images/icon3.jpg" type="image/icon type">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <p>required fields are followed by *</p>
+    <h6>Personal Informaiton</h6>
+    <p>Name : * <input type="text" id="name" placeholder="Your Name" required></p>
+    <fieldset>
+    <legend>Gender</legend>
+    <p>Male <input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female"> Others <input type="radio" name="gender" id="others"></p>
+    </fieldset>
+    
+    <p>Phone Number : * <input type="number" placeholder="91XXXXXXXXXX" required></p>
+    <p>Email : <input type="email" placeholder="abc123@gmail.com"></p>
+    <p>Address : <textarea rows="5" cols="40" placeholder="House No., Street Name/Landmark, Colony, City/Town, District, State"></textarea></p>
+
+    <h6>Payment Information</h6>
+    <p> Card Type *
+        <select name="card type" id="card" required>
+            <option>--Select card type--</option>
+            <option>VISA</option>
+            <option>MASTER CARD</option>
+            <option>RUPAY</option>
+        </select>
+    </p>
+    <p>Card Number : * <input type="number" placeholder="123-456-789" required></p>
+    <p>Expiry Date : * <input type="date" required></p>
+    <p>CVV: * <input type="password" placeholder="123" required></p>
+    <a href="Thankyou.html">
+    <input class="payment" type="submit" value="PAY NOW">
+    </a> 
+</form> 
+</div> 
+</body>
+</html>

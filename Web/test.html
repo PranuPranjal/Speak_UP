@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" onsubmit="return false;">
+        <input   style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput"/>
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+<script>
+    function othername(event){
+        event.preventDefault();
+        var userInput = document.getElementById("userInput").value;
+    
+        localStorage.setItem('ls_userInput',userInput);
+    }
+</script>
+</html>
